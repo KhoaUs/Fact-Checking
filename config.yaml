@@ -1,0 +1,35 @@
+paths:
+  data_dir: "data"
+  db_path: "data/db.sqlite"
+  objects_dir: "data/objs"
+  whoosh_dir: "data/whoosh_index"
+  faiss_dir: "data/faiss" 
+models:
+  embed_model: "intfloat/multilingual-e5-base"   
+  reranker: "BAAI/bge-reranker-base" 
+  phobert_hub_id: "KhoaUs/phobert-fc"  
+thresholds:
+  min_rerank: 0.35   # nếu có reranker
+  min_vec: 0.35      # nếu không có reranker thì dùng vec score
+  keep_at_least: 0   # 
+retrieval:
+  bm25_topk: 50
+  vec_topk: 50
+  rerank_topk: 30
+  evidence_m: 3  # số evidence trả ra
+fusion:
+  w_bm25: 0.45
+  w_vec:  0.35
+  w_rer:  0.20
+  half_life_days: 365  # phạt “độ cũ” bài viết (1 năm bán rã)
+  default_trust: 0.7
+  trust:
+    vnexpress.net: 0.9
+    tuoitre.vn: 0.9
+    thanhnien.vn: 0.9
+    vietnamnet.vn: 0.9
+    dantri.com.vn: 0.9
+    znews.vn: 0.9
+    vtv.vn: 0.9
+    baochinhphu.vn: 0.95
+    vi.wikipedia.org: 0.9

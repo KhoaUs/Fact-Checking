@@ -1,0 +1,41 @@
+sources:
+  - name: VnExpress - Tin mới nhất
+    provider: rss
+    url: "https://vnexpress.net/rss/tin-moi-nhat.rss"
+    tier: 1
+
+  - name: Tuổi Trẻ - Tin mới nhất
+    provider: rss
+    url: "https://tuoitre.vn/rss/tin-moi-nhat.rss"
+    tier: 1
+
+  - name: Vietnamnet
+    provider: rss
+    # ĐÃ SỬA LẠI: Dùng kênh Thời sự ổn định hơn
+    url: "https://vietnamnet.vn/rss/thoi-su.rss"
+    tier: 1
+
+  - name: Dân Trí
+    provider: rss
+    url: "https://dantri.com.vn/rss/home.rss"
+    tier: 1
+
+  - name: Znews (Zing News)
+    provider: rss
+    url: "https://znews.vn/rss/xuat-ban.rss"
+    tier: 1
+
+  - name: VTV
+    provider: rss
+    url: "https://vtv.vn/rss/home.rss"
+    tier: 1
+
+  - name: Báo Chính Phủ
+    provider: rss
+    url: "http://baochinhphu.vn/Rss/Feed.aspx?format=rss&CateId=109"
+    tier: 1
+
+  - name: Thanh Niên - Trang chủ
+    provider: rss
+    url: "https://thanhnien.vn/rss/home.rss"
+    tier: 1
